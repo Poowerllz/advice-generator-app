@@ -88,7 +88,7 @@ function App() {
             color: "hsl(150, 100%, 66%)",
             fontSize: "12px",
             margin: "0",
-            fontWeight: '500'
+            fontWeight: "500",
           }}
         >
           A D V I C E #{texts?.slip.id || "00"}
@@ -101,7 +101,6 @@ function App() {
             margin: "0",
             marginTop: "16px",
             textAlign: "center",
-            
           }}
         >
           "{texts?.slip.advice || "Oops, our servers are down."}"
