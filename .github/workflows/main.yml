@@ -12,8 +12,6 @@ jobs:
   clone:
     runs-on: ubuntu-latest
       steps:
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_TODEPLOY }}
         - run: |
 
           git clone https://user:$GITHUB_TOKEN@github.com/Poowerllz/advice-generator-app # This works
@@ -33,3 +31,5 @@ jobs:
           # origin ***github.com/owner/my-repo.git (push)
 
           git push https://user:$GITHUB_TOKEN@github.com/CaduOrg/Repo-test main
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_TODEPLOY }}
