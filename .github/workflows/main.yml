@@ -8,6 +8,10 @@ on:
   pull_request:
     branches: [main]
 
+jobs:
+  clone:
+    runs-on: ubuntu-latest
+      steps:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_TODEPLOY }}
         run: |
