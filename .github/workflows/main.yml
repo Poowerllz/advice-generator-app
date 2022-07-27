@@ -3,8 +3,6 @@ name: GIT PUSH TO ANOTHER REPO
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_TODEPLOY }}
