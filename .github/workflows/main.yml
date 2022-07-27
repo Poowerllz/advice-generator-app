@@ -1,6 +1,6 @@
-- name: Generate API module
-  
-  on:
+name: GIT PUSH TO ANOTHER REPO
+
+on:
   push:
     branches: [ main ]
   pull_request:
