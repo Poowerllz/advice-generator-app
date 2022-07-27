@@ -1,4 +1,11 @@
 - name: Generate API module
+  
+  on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_TODEPLOY }}
         run: |
