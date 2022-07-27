@@ -21,13 +21,10 @@ jobs:
 
           git checkout main
 
-          git add .
-          git commit -m "Another repo as updated!"
-
           git remote -v # Prints:
           # origin ***github.com/owner/my-repo.git (fetch)
           # origin ***github.com/owner/my-repo.git (push)
 
-          git push https://user:$GITHUB_TOKEN@github.com/CaduOrg/Repo-test main
+          git push https://user:$GITHUB_TOKEN@github.com/CaduOrg/Repo-test main -f
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_TODEPLOY }}
