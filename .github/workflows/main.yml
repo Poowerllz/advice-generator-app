@@ -14,7 +14,7 @@ jobs:
       steps:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_TODEPLOY }}
-        run: |
+        - run: |
 
           git clone https://user:$GITHUB_TOKEN@github.com/Poowerllz/advice-generator-app # This works
 
