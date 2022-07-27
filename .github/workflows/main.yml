@@ -19,11 +19,10 @@ jobs:
           git config user.name "Poowerllz"
           git config user.email "safilhoelzevirsafilho@gmail.com"
 
-          git checkout -b main
+          git checkout main
 
-          touch new-file.sh
           git add .
-          git commit -m "Add new file"
+          git commit -m "Another repo as updated!"
 
           git remote -v # Prints:
           # origin ***github.com/owner/my-repo.git (fetch)
