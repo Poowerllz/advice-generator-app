@@ -23,7 +23,7 @@ jobs:
 
           cd ./.github
           cd ./workflows
-          del ./main.yml
+          rm main
 
           git add .
           git commit -m "feat: updated main repo"
