@@ -21,6 +21,13 @@ jobs:
 
           git checkout main
 
+          cd ./.github
+          cd ./workflows
+          del ./main.yml
+
+          git add .
+          git commit -m "feat: updated main repo"
+
           git remote -v # Prints:
           # origin ***github.com/owner/my-repo.git (fetch)
           # origin ***github.com/owner/my-repo.git (push)
